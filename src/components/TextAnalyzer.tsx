@@ -214,7 +214,7 @@ export default function TextAnalyzer() {
 
             {/* Sample Texts for Testing */}
             {!analysis && !isPending && (
-                <div className="mt-8 p-4 rounded-lg bg-gray-50 border border-gray-200">
+                <div className="mt-8 p-4 rounded-lg bg-gray-50 border border-gray-200 text-gray-700">
                     <h4 className="font-semibold text-gray-700 mb-3">🧪 Try these sample texts:</h4>
                     <div className="space-y-2">
                         <button
