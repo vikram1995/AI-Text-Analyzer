@@ -26,8 +26,9 @@ export default function TextAnalyzer() {
             try {
                 const result = await analyzeTextAction(text.trim());
                 setAnalysis(result);
-            } catch (e: any) {
-                setError(e?.message || 'Failed to analyze text. Please try again.');
+            } catch (e: unknown) {
+                const errorMessage = e instanceof Error ? e.message : 'Failed to analyze text. Please try again.';
+                setError(errorMessage);
             }
         });
     };
